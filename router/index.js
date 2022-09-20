@@ -1,9 +1,10 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {CovidTracker, Splash} from 'react-native';
+import CovidTracker from '../Dashboard';
+import Splash from '../pages/Splash';
+// import {CovidTracker, Splash} from 'react-native';
 
 const Stack = createNativeStackNavigator();
-
 
 const Router = () => {
   return (
@@ -18,7 +19,6 @@ const Router = () => {
         component={CovidTracker}
         options={{headerShown: false}}
       />
-       
     </Stack.Navigator>
   );
 };

@@ -13,11 +13,16 @@ function App() {
 
 export default App;
 */
-import React  from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import CovidTracker from './Dashboard';
+import {NavigationContainer} from '@react-navigation/native';
+import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import Router from './router';
+// import Splash from './pages';
 
 export default function App() {
-  return <CovidTracker />
-  
+  return (
+    <NavigationContainer>
+      <Router />
+    </NavigationContainer>
+  );
 }
